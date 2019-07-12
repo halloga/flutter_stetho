@@ -48,4 +48,7 @@ class StethoHttpClientResponse extends StreamView<List<int>>
 
   @override
   int get statusCode => response.statusCode;
+
+  @override
+  HttpClientResponseCompressionState get compressionState => response.compressionState;
 }
