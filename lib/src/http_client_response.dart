@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:typed_data';
 
 class StethoHttpClientResponse extends StreamView<List<int>>
     implements HttpClientResponse {
@@ -51,6 +50,5 @@ class StethoHttpClientResponse extends StreamView<List<int>>
   int get statusCode => response.statusCode;
 
   @override
-  HttpClientResponseCompressionState get compressionState =>
-      response.compressionState;
+  HttpClientResponseCompressionState get compressionState => response.compressionState;
 }
